@@ -1,0 +1,7 @@
+{
+  "name": "hubot-slack",
+  "version": "1.0.0",
+  "dependencies": {
+    "hubot-seen": "^1.0.1"
+  }
+}
