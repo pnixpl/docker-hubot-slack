@@ -10,4 +10,4 @@ services:
       HUBOT_DESCRIPTION: ${HUBOT_DESCRIPTION}
       EXTERNAL_SCRIPTS: ${EXTERNAL_SCRIPTS}
     volumes:
-    - ./node_modules/:/home/hubot/scripts
+    - ./scripts/:/home/hubot/scripts
