@@ -2,7 +2,5 @@ version: '3'
 services:
   hubot:
     image: pnixpl/hubot-slack:latest
-    environment:
-
     volumes:
     - ./node_modules/:/home/hubot/scripts
