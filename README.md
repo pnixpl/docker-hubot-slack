@@ -14,12 +14,16 @@ You must first add the Hubot Slack app to your team to obtain a token. Search fo
 
 ##Start hubot-slack with your own scripts
 ```
+
 sudo docker run -d --name "hubot" -e HUBOT_SLACK_TOKEN=MY_HUBOT_SLACK_TOKEN -v /path/to/hubot/volume:/home/hubot/scripts jordan/hubot-slack:latest
+
 ```
 
 ##Start hubot-slack with the help and pugme scripts
 ```
+
 sudo docker run -d --name "hubot" -e HUBOT_SLACK_TOKEN=MY_HUBOT_SLACK_TOKEN -e EXTERNAL_SCRIPTS=hubot-help,hubot-pugme jordan/hubot-slack:latest
+
 ```
 
 ## Env vars
