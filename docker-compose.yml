@@ -1,6 +1,13 @@
 version: '3'
 services:
   hubot:
+    container_name: hubot
     image: pnixpl/hubot-slack:latest
+    environment:
+      HUBOT_SLACK_TOKEN: ${HUBOT_SLACK_TOKEN}
+      HUBOT_NAME: ${HUBOT_NAME}
+      HUBOT_OWNER: ${HUBOT_OWNER}
+      HUBOT_DESCRIPTION: ${HUBOT_DESCRIPTION}
+      EXTERNAL_SCRIPTS: ${EXTERNAL_SCRIPTS}
     volumes:
     - ./node_modules/:/home/hubot/scripts
